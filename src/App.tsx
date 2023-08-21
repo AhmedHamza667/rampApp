@@ -17,7 +17,7 @@ export function App() {
   const transactions = useMemo(
     () => paginatedTransactions?.data ?? transactionsByEmployee ?? null,
     [paginatedTransactions, transactionsByEmployee]
-  )
+  )  
 
   const loadAllTransactions = useCallback(async () => {
     setIsLoading(true)
